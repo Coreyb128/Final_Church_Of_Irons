@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<link rel="icon" href="dumbbell-icon.jpg">
+<head>
+<title>Church of Iron</title>
+<link href="style2.css" rel="stylesheet" />
+<script>
+var thumb = new Image;
+var thumb2 = new Image;
+
+function startup()
+{
+ thumb.src = "thumb.png";
+ thumb2.src = "thumb2.png";
+ return;
+}
+
+function turnBlue()
+{
+ document.thumbs.src = thumb.src;
+ document.thumbs2.src = thumb.src;
+ document.thumbs3.src = thumb.src;
+ return;
+}
+
+function turnRed()
+{
+ document.thumbs.src = thumb2.src;
+ return;
+}
+
+function turnRed2()
+{
+ document.thumbs2.src = thumb2.src;
+ return;
+}
+
+function turnRed3()
+{
+ document.thumbs3.src = thumb2.src;
+ return;
+}
+</script>
+<style>
+footer {
+  text-align: left;
+  padding: 3px;
+  background: radial-gradient(gold, black);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+</style>
+</head>
+<h1>Membership Plan</h1>
+<nav class="horizontal" id="mainLinks">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="planning.html">Membership</a></li>           
+</ul>
+<body onLoad="startup()">
+  <img src="Daco_5075464.png" width=15% height=55% style="float:right;">
+  <img src="Daco_5075464.png" width=15% height=55% style="float:left;">
+<table class="tg" width=65%>
+<thead>
+  <tr>
+    <th class="tg-c3ow" colspan="3">Features</th>
+    <th class="tg-c3ow" colspan="4">Gold</th>
+    <th class="tg-c3ow" colspan="4">Regular</th>
+    <th class="tg-c3ow" colspan="4">None</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow" colspan="3">Wi-Fi</td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" colspan="3">Locker Storage</td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" colspan="3">Store Access</td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" colspan="3">Fitness Classes</td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+    <td class="tg-0pky" colspan="4"></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" colspan="3">Select Discounts</td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+    <td class="tg-0pky" colspan="4"></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" colspan="3">Tanning</td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+    <td class="tg-0pky" colspan="4"></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" colspan="3">Massages</td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+    <td class="tg-0pky" colspan="4"></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" colspan="3">Personal Trainer</td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+    <td class="tg-0pky" colspan="4"></td>
+    <td class="tg-0pky" colspan="4"></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" colspan="3">Sauna</td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+    <td class="tg-0pky" colspan="4"></td>
+    <td class="tg-0pky" colspan="4"></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" colspan="3">Rewards & Discounts</td>
+    <td class="tg-d52n" colspan="4"><img src="check.png" width=20></td>
+    <td class="tg-0pky" colspan="4"></td>
+    <td class="tg-0pky" colspan="4"></td>
+  </tr>
+  <tr>
+    <td class="tg-e" colspan="3"></td>
+    <td class="tg-e" colspan="4">   <a href="form.html"
+      onMouseOut="turnBlue()" onMouseOver="turnRed()">
+     <img name="thumbs" src="thumb.png"width="20">
+   </a></td>
+    <td class="tg-e" colspan="4">   <a href="form.html"
+      onMouseOut="turnBlue()" onMouseOver="turnRed2()">
+     <img name="thumbs2" src="thumb.png" width="20">
+   </a></td>
+    <td class="tg-e" colspan="4">   <a href="form.html"
+      onMouseOut="turnBlue()" onMouseOver="turnRed3()">
+     <img name="thumbs3" src="thumb.png" width="20">
+   </a></td>
+  </tr>
+</tbody>
+</table>
+   <footer>
+         The Church of Irons<br/>
+         515 Court Street<br/>
+         Brooklyn, NY 11201<br/>
+         Office: (555) 555 - 5556        
+   </footer>
+</body>
+
+</html>

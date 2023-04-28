@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="dumbbell-icon.jpg">
+<head>
+<title>Church of Iron</title>
+<link href="style3.css" rel="stylesheet"/>
+<script>
+function doClear()
+{
+ document.GymForm.member.value = '';
+ document.GymForm.gender.value = '';
+ document.GymForm.DoB.value = '';
+ document.GymForm.address.value = '';
+ document.GymForm.member2.value = '';
+ document.GymForm.address2.value = '';
+ document.GymForm.email.value = '';
+ document.GymForm.city.value = '';
+ document.GymForm.state.value = '';
+ document.GymForm.zip.value = '';
+ document.GymForm.phone.value = '';
+ return;
+}
+
+function doSubmit()
+{
+  if (validateText() == false)
+  {
+   alert("Required data is missing");
+   return;
+  }
+  
+  alert("Your gym membership has been submitted.");
+  return;
+}
+
+function validateText()
+{
+ var member = document.GymForm.member.value;
+ if (member.length == 0) return false;
+ var member2 = document.GymForm.member2.value;
+ if (member2.length == 0) return false;
+ var address = document.GymForm.address2.value;
+ if (address.length == 0) return false;
+ var address2 = document.GymForm.address.value;
+ if (address2.length == 0) return false;
+ var email = document.GymForm.email.value;
+ if (email.length == 0) return false;
+ var city = document.GymForm.city.value;
+ if (city.length == 0) return false;
+ var state = document.GymForm.state.value;
+ if (state.length == 0) return false;
+ var zip = document.GymForm.zip.value;
+ if (zip.length == 0) return false;
+ var phone = document.GymForm.phone.value;
+ if (phone.length == 0) return false;
+ var DoB = document.GymForm.DoB.value;
+ if (DoB.length == 0) return false;
+ var gender = document.GymForm.gender.value;
+ if (gender.length == 0) return false;
+ return true;
+}
+
+</script>
+<style>
+footer {
+  text-align: left;
+  padding: 3px;
+  background: radial-gradient(gold, black);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+</style>
+</head>
+<h1>The Church of Irons</h1>
+<nav class="horizontal" id="mainLinks">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="planning.html">Membership</a></li>          
+</ul>
+<body>
+  <img src="Daco_5075464.png" alt="lifting" width=15% height=55% style="float:right;">
+  <img src="Daco_5075464.png" alt-lifting" width=15% height=55% style="float:left;">
+  <form name="GymForm" class="GymForm">
+    <p>
+      <h4>Personal Information:</h4>
+        First Name: <input name="member" size="15" type="text">
+        Last Name: <input name="member2" size="14" type="text"><br>
+        E-mail: <input name="email" size="15" type="email">
+	Phone: <input name="phone" size"15" type="tel"><br>
+        Date of Birth: <input name="DoB"  type="date">
+	Gender: <select name="gender"/>
+	<option> </option>
+	<option>Male</option>
+	<option>Female</option>
+	<option>Non-binary</option>
+	<option>Prefer not to say</option>
+	</select>
+      </font>
+    </p>
+    <p>
+      <h4>Billing Address</h4>
+        Address: <input name="address" size="50" type="text"><br>
+        Address line 2: <input name="address2" size="50" type="text"><br>
+        City: &nbsp;&nbsp;&nbsp;<input name="city" size"15" type="text">
+	State: <input name="state" size="2" type="text">
+	Zip: <input name="zip" size="5" type="text"><br>
+      </font>
+    </p>
+
+    <input type="button" value="Submit Form" onClick="doSubmit()">
+    <input type="button" value="Clear Entries" onClick="doClear()">
+  </form>
+<footer>
+         The Church of Irons<br/>
+         515 Court Street<br/>
+         Brooklyn, NY 11201<br/>
+         Office: (555) 555 - 5556       
+</footer>
+</body>
+
+</html>

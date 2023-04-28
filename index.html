@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<link rel="icon" href="dumbbell-icon.jpg">
+<head>
+<title>Church of Iron</title>
+<link href="style1.css" rel="stylesheet" />
+<script>
+var imgArray = new Array(4);
+var index = 0;
+
+function select()
+{
+ index = Math.floor(Math.random() * 4);
+ document.banner.src = imgArray[index].src;
+ document.banner2.src = imgArray[index].src;
+ document.banner3.src = imgArray[index].src;
+ document.banner4.src = imgArray[index].src;
+ document.banner5.src = imgArray[index].src;
+ document.banner6.src = imgArray[index].src;
+ setTimeout("select()", 1000);
+ return;
+}
+
+
+function startup()
+{
+ imgArray[0] = new Image;
+ imgArray[0].src = "barbells.jpg";
+ imgArray[1] = new Image;
+ imgArray[1].src = "treadmill.jpg";
+ imgArray[2] = new Image;
+ imgArray[2].src = "gymmachines.jpg";
+ imgArray[3] = new Image;
+ imgArray[3].src = "viruswalk.jpg";
+ select();
+ return;
+}
+</script>
+<style>
+footer {
+  text-align: left;
+  padding: 3px;
+  background: radial-gradient(gold, black);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+</style>
+</head>
+<h1>The Church of Irons</h1>
+<nav class="horizontal" id="mainLinks">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="planning.html">Membership</a></li>          
+</ul>
+<body onLoad="startup()">
+  <img src="Daco_5075464.png" width=15% height=55% style="float:right;">
+  <img src="Daco_5075464.png" width=15% height=55% style="float:left;">
+  <div align="center">
+    <img name="banner" src="barbells.jpg" width="200" height="150">
+    <img name="banner2" src="treadmill.jpg" width="200" height="150">
+    <img name="banner3" src="gymmachines.jpg" width="200" height="150">
+<p>Located in downtown Brooklyn,<br> The Church of Iron is the place to come to if you want a good workout. 
+With state of the art equipment and highly trained staff to help you find just the right exercise for you.
+We are committed to helping you obtain the godlike physique of your dreams.</p>
+  <div align="center">
+    <img name="banner4" src="barbells.jpg" width="200" height="150">
+    <img name="banner5" src="treadmill.jpg" width="200" height="150">
+    <img name="banner6" src="gymmachines.jpg" width="200" height="150">
+   <footer>
+         The Church of Irons<br/>
+         515 Court Street<br/>
+         Brooklyn, NY 11201<br/>
+         Office: (555) 555 - 5556     
+   </footer>
+</body>
+
+</html>
